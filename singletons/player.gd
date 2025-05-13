@@ -1,0 +1,6 @@
+extends Node
+
+var PLAYER_SPEED = 200
+var PLAYER_MOVE = false
+var PLAYER_SPEED_PER_SECOND = 0.3
+var PLAYER_ANIMATION
