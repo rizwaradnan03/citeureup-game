@@ -1,15 +1,14 @@
 extends StaticBody2D
 
-
-# Called when the node enters the scene tree for the first time.
-func _ready() -> void:
-	pass # Replace with function body.
-
-
-# Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
-	pass
-
+	if Player.PLAYER_PACKAGED:
+		var player = Player.PLAYER_PACKAGED
+		add_child(player)
+		Player.PLAYER_PACKAGED = null
+		player.position = Vector2(3, -5)
 
 func _on_area_2d_body_entered(body: Node2D) -> void:
-	print("Ada body masuk", body)
+	if body.name == "Player":
+		Player.PLAYER_PACKAGED = body
+		body.get_parent().remove_child(body)
+		get_tree().change_scene_to_file("res://objects/properties/house.tscn")

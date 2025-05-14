@@ -1,6 +1,6 @@
 [gd_scene load_steps=5 format=3 uid="uid://bygr4y7xjvdoc"]
 
-[ext_resource type="Texture2D" uid="uid://cb1x7bqbub5g4" path="res://assets/Outdoor decoration/House.png" id="1_73f6h"]
+[ext_resource type="Texture2D" uid="uid://cb1x7bqbub5g4" path="res://assets/Cute Fantasy/Outdoor decoration/House.png" id="1_73f6h"]
 [ext_resource type="Script" uid="uid://bemogglpt0is8" path="res://scripts/house.gd" id="1_bo5ig"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_bo5ig"]
