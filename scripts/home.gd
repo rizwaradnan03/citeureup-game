@@ -8,7 +8,6 @@ func _ready() -> void:
 		add_child(player)
 		Player.PLAYER_PACKAGED = null
 		$Player.position = $SpawnPoint.position
-		print("bji")
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.

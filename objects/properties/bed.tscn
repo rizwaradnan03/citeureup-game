@@ -1,0 +1,18 @@
+[gd_scene load_steps=4 format=3 uid="uid://dqteea4cxh1d0"]
+
+[ext_resource type="Texture2D" uid="uid://70qo4h5hc0mx" path="res://assets/16 Small Indoor Tileset/Furniture 4.png" id="1_hklhe"]
+[ext_resource type="Script" uid="uid://cecdygju4y5of" path="res://scripts/bed.gd" id="1_lumhl"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_hklhe"]
+size = Vector2(16, 16)
+
+[node name="Bed" type="StaticBody2D"]
+script = ExtResource("1_lumhl")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_hklhe")
+region_enabled = true
+region_rect = Rect2(0, 0, 16, 16)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_hklhe")
